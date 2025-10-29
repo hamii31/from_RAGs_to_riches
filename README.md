@@ -1,11 +1,11 @@
-# 📚 Ollama Book RAG
+# Ollama Book RAG
 
 Query large books (900+ pages) locally using RAG (Retrieval-Augmented Generation). 100% private, no cloud APIs.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## ✨ What It Does
+## What It Does
 
 Ask questions about **any book** and get detailed, cited answers:
 ```bash
@@ -13,9 +13,9 @@ $ python ollama_book_rag.py textbook.pdf
 
 Your question: What does the book say about the thalamus?
 
-🔍 Searching for: 'thalamus'
+Searching for: 'thalamus'
 ✓ Found 10 relevant sections
-💭 Generating answer...
+Generating answer...
 
 The thalamus serves as a critical relay station for sensory 
 information (Page 234). It processes nearly all sensory inputs 
@@ -23,17 +23,17 @@ before they reach the cortex...
 
 [Additional detailed answer with multiple page citations]
 
-📄 Sources: Pages 234, 235, 236, 237, 412, 413
+Sources: Pages 234, 235, 236, 237, 412, 413
 ```
 
 **Features:**
-- 🔒 100% Local & Private
-- 📚 Handles 900+ page books
-- ⚡ Fast queries (5-10 sec after indexing)
-- 💾 Smart caching (index once, query forever)
-- 📄 Automatic page citations
+- 100% Local & Private
+- Handles 900+ page books
+- Fast queries (5-10 sec after indexing)
+- Smart caching (index once, query forever)
+- Automatic page citations
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Ollama
 ```bash
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 python ollama_book_rag.py your_book.pdf
 ```
 
-## 💡 Usage
+## Usage
 
 ### Basic Usage
 ```python
@@ -135,7 +135,7 @@ chunks = rag.create_chunks(
 )
 ```
 
-## 🎯 Model Recommendations
+## Model Recommendations
 
 | Your RAM | Model | Command |
 |----------|-------|---------|
@@ -145,7 +145,7 @@ chunks = rag.create_chunks(
 
 **Always needed:** `ollama pull nomic-embed-text`
 
-## 🔍 How It Works
+## How It Works
 ```
 1. Index Book (one-time)
    PDF → Extract text → Split into chunks → Generate embeddings → Cache
@@ -158,7 +158,7 @@ chunks = rag.create_chunks(
 - Traditional: Can't handle 900 pages (context limit)
 - RAG: Searches first, reads only relevant parts
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Ollama is not running"
 ```bash
@@ -187,28 +187,21 @@ rag = BookRAGSystem(model_name="phi3")
 - Only happens once (cached after)
 - Queries are instant afterward
 
-## 📊 Performance
 
-| Book Size | Index Time | Query Time | Cache Size |
-|-----------|------------|------------|------------|
-| 100 pages | 2 min | 5 sec | 30 MB |
-| 500 pages | 7 min | 6 sec | 120 MB |
-| 900 pages | 12 min | 7 sec | 245 MB |
-
-## 📝 License
+## License
 
 MIT License - see [LICENSE](LICENSE)
 
-## 🙏 Credits
+## Credits
 
 - [Ollama](https://ollama.ai/) - Local LLM framework
 - [PyPDF2](https://pypdf2.readthedocs.io/) - PDF extraction
 - [Nomic](https://www.nomic.ai/) - Embedding model
 
-## 🆘 Support
+## Support
 
 **Issues**: [GitHub Issues](https://github.com/hamii31/from_RAGs_to_riches/issues)
 
 ---
 
-⭐ **Star this repo if it helped you!**
+**Star this repo if it helped you!**
