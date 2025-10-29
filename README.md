@@ -197,11 +197,6 @@ MIT License - see [LICENSE](LICENSE)
 - [Ollama](https://ollama.ai/) - Local LLM framework
 - [PyPDF2](https://pypdf2.readthedocs.io/) - PDF extraction
 - [Nomic](https://www.nomic.ai/) - Embedding model
-
-## Support
-
-**Issues**: [GitHub Issues](https://github.com/hamii31/from_RAGs_to_riches/issues)
-
 ---
 
 **Star this repo if it helped you!**
